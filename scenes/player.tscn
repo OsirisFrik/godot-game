@@ -1,0 +1,465 @@
+[gd_scene load_steps=54 format=3 uid="uid://cq8xhg43rm5ku"]
+
+[ext_resource type="Script" path="res://scripts/entities/Player.gd" id="1_f26a3"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7hy0i"]
+load_path = "res://.godot/imported/Double Jump (32x32).png-abdc4a21e583a8b2aac7e4cf69462e80.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n34gq"]
+atlas = SubResource("CompressedTexture2D_7hy0i")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_anjys"]
+atlas = SubResource("CompressedTexture2D_7hy0i")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1t3vd"]
+atlas = SubResource("CompressedTexture2D_7hy0i")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hlumx"]
+atlas = SubResource("CompressedTexture2D_7hy0i")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_odi65"]
+atlas = SubResource("CompressedTexture2D_7hy0i")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3cayy"]
+atlas = SubResource("CompressedTexture2D_7hy0i")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ml4q1"]
+load_path = "res://.godot/imported/Fall (32x32).png-5175633137cfab12dbe4234760793375.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nxm1a"]
+atlas = SubResource("CompressedTexture2D_ml4q1")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_w0uga"]
+load_path = "res://.godot/imported/Hit (32x32).png-14207fc88f4aecae402db9c4409fdfc5.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1mqoc"]
+atlas = SubResource("CompressedTexture2D_w0uga")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_143rn"]
+atlas = SubResource("CompressedTexture2D_w0uga")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4fvmw"]
+atlas = SubResource("CompressedTexture2D_w0uga")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4sofc"]
+atlas = SubResource("CompressedTexture2D_w0uga")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mjaka"]
+atlas = SubResource("CompressedTexture2D_w0uga")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ub1o2"]
+atlas = SubResource("CompressedTexture2D_w0uga")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6bsik"]
+atlas = SubResource("CompressedTexture2D_w0uga")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_opu5d"]
+load_path = "res://.godot/imported/Jump (32x32).png-6553661eb305ed4ca6a027bd2c626547.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5mpxw"]
+atlas = SubResource("CompressedTexture2D_opu5d")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_h50ae"]
+load_path = "res://.godot/imported/Idle (32x32).png-8078aadc43e1a7e596ab707ecc7111fa.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wjsnx"]
+atlas = SubResource("CompressedTexture2D_h50ae")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_133t5"]
+atlas = SubResource("CompressedTexture2D_h50ae")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0cehe"]
+atlas = SubResource("CompressedTexture2D_h50ae")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pmgi6"]
+atlas = SubResource("CompressedTexture2D_h50ae")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8a6kf"]
+atlas = SubResource("CompressedTexture2D_h50ae")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6nu43"]
+atlas = SubResource("CompressedTexture2D_h50ae")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_00onu"]
+atlas = SubResource("CompressedTexture2D_h50ae")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3spk4"]
+atlas = SubResource("CompressedTexture2D_h50ae")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1n188"]
+atlas = SubResource("CompressedTexture2D_h50ae")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bh7lv"]
+atlas = SubResource("CompressedTexture2D_h50ae")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3nbqu"]
+atlas = SubResource("CompressedTexture2D_h50ae")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tkp83"]
+atlas = SubResource("CompressedTexture2D_h50ae")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jnkkl"]
+atlas = SubResource("CompressedTexture2D_h50ae")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g7i7e"]
+atlas = SubResource("CompressedTexture2D_h50ae")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4d0e0"]
+load_path = "res://.godot/imported/Wall Jump (32x32).png-1eca671067b6baad6953806beb38df4b.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_33rij"]
+atlas = SubResource("CompressedTexture2D_4d0e0")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u0rm1"]
+atlas = SubResource("CompressedTexture2D_4d0e0")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7kpji"]
+atlas = SubResource("CompressedTexture2D_4d0e0")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_31dfk"]
+atlas = SubResource("CompressedTexture2D_4d0e0")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8tffn"]
+atlas = SubResource("CompressedTexture2D_4d0e0")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bfy5f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n34gq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_anjys")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1t3vd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hlumx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_odi65")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3cayy")
+}],
+"loop": false,
+"name": &"double_jump",
+"speed": 11.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nxm1a")
+}],
+"loop": true,
+"name": &"fall",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1mqoc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_143rn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4fvmw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4sofc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mjaka")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ub1o2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6bsik")
+}],
+"loop": true,
+"name": &"hit",
+"speed": 11.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5mpxw")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wjsnx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_133t5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0cehe")
+}],
+"loop": true,
+"name": &"main",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pmgi6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8a6kf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6nu43")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_00onu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3spk4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1n188")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bh7lv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3nbqu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tkp83")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jnkkl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g7i7e")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 11.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_33rij")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u0rm1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7kpji")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_31dfk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8tffn")
+}],
+"loop": true,
+"name": &"wall_jump",
+"speed": 11.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_luiap"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_uea7s"]
+load_path = "res://.godot/imported/virtual_boy.png-fd9f4e716133bae8991494a6226a90cf.ctex"
+
+[sub_resource type="Animation" id="Animation_ycecr"]
+length = 0.001
+
+[sub_resource type="Animation" id="Animation_gnyym"]
+resource_name = "double_jump"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [26, 27, 28, 29, 30, 31]
+}
+
+[sub_resource type="Animation" id="Animation_356n0"]
+resource_name = "fall"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [25]
+}
+
+[sub_resource type="Animation" id="Animation_s1rqj"]
+resource_name = "hit"
+length = 0.7
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [41, 42, 43, 44, 45, 46, 47]
+}
+
+[sub_resource type="Animation" id="Animation_hqsor"]
+resource_name = "idle"
+length = 1.1
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+}
+
+[sub_resource type="Animation" id="Animation_0h1ft"]
+resource_name = "jump"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [24]
+}
+
+[sub_resource type="Animation" id="Animation_okfmg"]
+resource_name = "run"
+length = 0.6
+loop_mode = 1
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 23]
+}
+
+[sub_resource type="Animation" id="Animation_nrc50"]
+resource_name = "wall_jump"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [36, 37, 38, 39, 40]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qu3em"]
+_data = {
+"RESET": SubResource("Animation_ycecr"),
+"double_jump": SubResource("Animation_gnyym"),
+"fall": SubResource("Animation_356n0"),
+"hit": SubResource("Animation_s1rqj"),
+"idle": SubResource("Animation_hqsor"),
+"jump": SubResource("Animation_0h1ft"),
+"run": SubResource("Animation_okfmg"),
+"wall_jump": SubResource("Animation_nrc50")
+}
+
+[node name="Player" type="CharacterBody2D"]
+position = Vector2(5, 0)
+script = ExtResource("1_f26a3")
+SPEED = 150.0
+metadata/_edit_horizontal_guides_ = [22.0]
+
+[node name="PlayerSprite" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(-1, -1)
+sprite_frames = SubResource("SpriteFrames_bfy5f")
+animation = &"walk"
+autoplay = "main"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3)
+scale = Vector2(1.06352, 0.799999)
+shape = SubResource("CapsuleShape2D_luiap")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("CompressedTexture2D_uea7s")
+hframes = 12
+vframes = 5
+frame = 24
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_qu3em")
+}
+autoplay = "idle"
+
+[node name="Camera2D" type="Camera2D" parent="."]
