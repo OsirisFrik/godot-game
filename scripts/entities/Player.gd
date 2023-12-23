@@ -5,14 +5,14 @@ class_name Player
 @export var SPEED = 300.0
 var JUMP_VELOCITY = -400.0
 var double_jump = false
+var looking = 1
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
-var animBlock = false
-var animBlockers = [
-	"jump",
-	"fall",
-	"double_jump"
+var animLocked = false
+var animLockers = [
+	"double_jump",
+	"hit"
 ]
 
 @onready var sprite = $Sprite2D
@@ -24,10 +24,13 @@ func _physics_process(delta):
 	if not is_on_floor():
 		velocity.y += gravity * delta
 
+		if Input.is_action_just_pressed("ui_accept"):
+			anim.play("double_jump")
+			velocity.y = JUMP_VELOCITY
+
 	# Handle jump.
 	if Input.is_action_just_pressed("ui_accept"):
 		if is_on_floor():
-			print(JUMP_VELOCITY)
 			velocity.y = JUMP_VELOCITY
 
 
@@ -39,6 +42,7 @@ func _physics_process(delta):
 		velocity.x = direction * SPEED
 
 		sprite.flip_h = direction < 0
+		looking = direction
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
@@ -46,6 +50,10 @@ func _physics_process(delta):
 	anim_ctrl()
 
 func anim_ctrl():
+	if animLocked == true:
+		print(animLocked)
+		return
+	
 	if is_on_floor():
 		if velocity.x == 0:
 			anim.play("idle")
@@ -61,5 +69,17 @@ func _on_saw_body_entered(body):
 	print(body)
 
 func hit():
-	velocity.x = move_toward(velocity.x, -5, SPEED)
+	print('hit')
+	var vel_x = SPEED * looking
+	
+	velocity.x -= (vel_x/ 10) * (SPEED - 100)
+	velocity.y = JUMP_VELOCITY / 2
 	anim.play("hit")
+	animLocked = true
+
+	move_and_slide()
+
+func _on_animation_end(animation):
+	if animation in animLockers:
+		print('animatiion unlocked')
+		animLocked = false

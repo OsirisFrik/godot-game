@@ -25,7 +25,7 @@ scale = Vector2(5, 5)
 texture = ExtResource("3_0yitv")
 
 [node name="Saw" parent="." instance=ExtResource("3_akdwn")]
-position = Vector2(143.107, 125.878)
+position = Vector2(-18.9098, 106.016)
 
 [node name="Lvl" parent="." instance=ExtResource("1_6kdcn")]
 position = Vector2(-57.068, -79.9515)
@@ -40,5 +40,5 @@ position = Vector2(576, 323.25)
 scale = Vector2(4.5, 647.5)
 texture = SubResource("GradientTexture1D_p5sk7")
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_pycxo")]
+[node name="Player" parent="." instance=ExtResource("1_pycxo")]
 position = Vector2(45.0621, 72.9617)

@@ -1,5 +1,6 @@
-[gd_scene load_steps=12 format=3 uid="uid://btaovmnwgblu6"]
+[gd_scene load_steps=13 format=3 uid="uid://btaovmnwgblu6"]
 
+[ext_resource type="Script" path="res://scripts/entities/Saw.gd" id="1_gyrl8"]
 [ext_resource type="Texture2D" uid="uid://domm34xyyr5ya" path="res://assets/Traps/Saw/On (38x38).png" id="1_wu43b"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2upof"]
@@ -70,6 +71,7 @@ animations = [{
 radius = 19.0263
 
 [node name="Saw" type="Node2D" groups=["traps"]]
+script = ExtResource("1_gyrl8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_mekk3")
@@ -81,3 +83,5 @@ frame_progress = 0.546683
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_6p2h1")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_saw_body_entered_node"]
