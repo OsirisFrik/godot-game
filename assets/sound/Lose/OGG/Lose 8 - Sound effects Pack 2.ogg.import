@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://be7oll0kopvec"
+path="res://.godot/imported/Lose 8 - Sound effects Pack 2.ogg-121ce6c9ff506e1a41696d7e10b6f62b.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sound/Lose/OGG/Lose 8 - Sound effects Pack 2.ogg"
+dest_files=["res://.godot/imported/Lose 8 - Sound effects Pack 2.ogg-121ce6c9ff506e1a41696d7e10b6f62b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

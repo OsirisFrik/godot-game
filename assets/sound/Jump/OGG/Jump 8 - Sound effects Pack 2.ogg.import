@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dcleaqvyvi64s"
+path="res://.godot/imported/Jump 8 - Sound effects Pack 2.ogg-71c6ef3c67ce4d69c66f37a2f51b7097.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sound/Jump/OGG/Jump 8 - Sound effects Pack 2.ogg"
+dest_files=["res://.godot/imported/Jump 8 - Sound effects Pack 2.ogg-71c6ef3c67ce4d69c66f37a2f51b7097.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

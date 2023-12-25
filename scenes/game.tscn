@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=3 uid="uid://w2ntbh1s13nu"]
 
+[ext_resource type="Script" path="res://scripts/scenes/MainGame.gd" id="1_1fvwn"]
 [ext_resource type="PackedScene" uid="uid://caosrsgkn0yxg" path="res://scenes/lvl.tscn" id="1_6kdcn"]
 [ext_resource type="PackedScene" uid="uid://cq8xhg43rm5ku" path="res://scenes/player.tscn" id="1_pycxo"]
 [ext_resource type="Texture2D" uid="uid://01bqe5pbskhv" path="res://assets/Background/Gray.png" id="3_0yitv"]
-[ext_resource type="PackedScene" uid="uid://btaovmnwgblu6" path="res://scenes/saw.tscn" id="3_akdwn"]
 
 [sub_resource type="Gradient" id="Gradient_wxfuy"]
 colors = PackedColorArray(0.290196, 0.290196, 0.290196, 1, 0.377919, 0.377919, 0.377919, 1)
@@ -13,6 +13,7 @@ gradient = SubResource("Gradient_wxfuy")
 
 [node name="Game" type="Node2D"]
 rotation = 0.000850581
+script = ExtResource("1_1fvwn")
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
@@ -24,11 +25,9 @@ position = Vector2(136.5, 79)
 scale = Vector2(5, 5)
 texture = ExtResource("3_0yitv")
 
-[node name="Saw" parent="." instance=ExtResource("3_akdwn")]
-position = Vector2(-18.9098, 106.016)
+[node name="ui" type="Node2D" parent="."]
 
-[node name="Lvl" parent="." instance=ExtResource("1_6kdcn")]
-position = Vector2(-57.068, -79.9515)
+[node name="hearts" type="Node2D" parent="ui"]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -40,5 +39,17 @@ position = Vector2(576, 323.25)
 scale = Vector2(4.5, 647.5)
 texture = SubResource("GradientTexture1D_p5sk7")
 
+[node name="Lvl" parent="." instance=ExtResource("1_6kdcn")]
+position = Vector2(0.135, 160)
+cooldown_timeout = null
+
 [node name="Player" parent="." instance=ExtResource("1_pycxo")]
-position = Vector2(45.0621, 72.9617)
+position = Vector2(13.1097, 128.989)
+metadata/_edit_horizontal_guides_ = [22.0]
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(-91.0672, -78.9226)
+anchor_mode = 0
+position_smoothing_speed = 8.0
+
+[connection signal="player_tilemap" from="Player" to="Lvl" method="_on_player_player_tilemap"]

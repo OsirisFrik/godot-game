@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://g1m8wrjf183y"
+path="res://.godot/imported/Hit 5 - Sound effects Pack 2.mp3-35e0f61384b4ee0595c5e8288167ac2d.mp3str"
+
+[deps]
+
+source_file="res://assets/sound/Hit/MP3/Hit 5 - Sound effects Pack 2.mp3"
+dest_files=["res://.godot/imported/Hit 5 - Sound effects Pack 2.mp3-35e0f61384b4ee0595c5e8288167ac2d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

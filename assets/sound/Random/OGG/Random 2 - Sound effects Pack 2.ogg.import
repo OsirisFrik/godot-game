@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dikshfnrdaqqd"
+path="res://.godot/imported/Random 2 - Sound effects Pack 2.ogg-2bf6a2e77779422716aa8e794c95200c.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sound/Random/OGG/Random 2 - Sound effects Pack 2.ogg"
+dest_files=["res://.godot/imported/Random 2 - Sound effects Pack 2.ogg-2bf6a2e77779422716aa8e794c95200c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

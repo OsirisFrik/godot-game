@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bbiul1y4l5pfa"
+path="res://.godot/imported/Blip 3 - Sound effects Pack 2.ogg-6a1806e06d24192a98e27b7537d9f969.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sound/Blip/OGG/Blip 3 - Sound effects Pack 2.ogg"
+dest_files=["res://.godot/imported/Blip 3 - Sound effects Pack 2.ogg-6a1806e06d24192a98e27b7537d9f969.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

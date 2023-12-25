@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cdgb0vww4ugug"
+path="res://.godot/imported/Lose 10 - Sound effects Pack 2.wav-e29c37dc354c953e417f38049c7ab010.sample"
+
+[deps]
+
+source_file="res://assets/sound/Lose/WAV/Lose 10 - Sound effects Pack 2.wav"
+dest_files=["res://.godot/imported/Lose 10 - Sound effects Pack 2.wav-e29c37dc354c953e417f38049c7ab010.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

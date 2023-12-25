@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ca804agtvkgxe"
+path="res://.godot/imported/Random 5 - Sound effects Pack 2.mp3-d8aebaa236ec7756fee89692aa516db9.mp3str"
+
+[deps]
+
+source_file="res://assets/sound/Random/MP3/Random 5 - Sound effects Pack 2.mp3"
+dest_files=["res://.godot/imported/Random 5 - Sound effects Pack 2.mp3-d8aebaa236ec7756fee89692aa516db9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
